@@ -4,10 +4,13 @@ function name(...data) {
   $.terminal.active().echo(`func - name   --  ${data}`);
 }
 
-function sum(a, b) {
-  // let a = Number(a_);
-  // let b = Number(b_);
+function testFunc(data) {
+  console.log(data);
+  $.terminal.active().echo(`${outputSign} ${data}`);
+  
+}
 
+function sum(a, b) {
   console.log(a + b);
   $.terminal.active().echo(`${outputSign} sum = ${a} + ${b} = ${a + b}`);
 }
