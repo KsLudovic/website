@@ -10,5 +10,33 @@
   "sum": {
     "parameters": ["a", "b"],
     "type": ["Number", "Number"]
+  },
+  "sub": {
+    "parameters": ["a", "b"],
+    "type": ["Number", "Number"]
+  },
+  "multiply": {
+    "parameters": ["a", "b"],
+    "type": ["Number","Number"]
+  },
+  "divide": {
+    "parameters": ["a", "b"],
+    "type": ["Number","Number"]
+  },
+  "power": {
+    "parameters": ["a", "b"],
+    "type": ["Number","Number"]
+  },
+  "binary": {
+    "parameters":["a"],
+    "type":["Number"]
+  },
+  "hex": {
+    "parameters":["a"],
+    "type":["Number"]
+  },
+  "factorial": {
+    "parameters":["a"],
+    "type":["Number"]
   }
 }
