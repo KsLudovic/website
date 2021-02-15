@@ -1,0 +1,57 @@
+// Explain Recasting: https://lodev.org/cgtutor/raycasting.html#Wolfenstein_3D_Textures_
+
+const W = 800;
+const H = 350;
+
+let scene;
+let point;
+
+let textures = [];
+let img;
+
+function preload() {
+  img = loadImage("brick.jpg");
+}
+
+function setup() {
+  let canvas = createCanvas(W, H * 2);
+  canvas.position((window.innerWidth - W) / 2, 50);
+
+  loadTexture();
+
+  scene = new Scene();
+  scene.createRandomSurface(4);
+
+  console.log("Double click set a point for wall\n 2 double click create a wall\n You can shift light source with pressing the mouse button");
+}
+
+function loadTexture() {
+  const w = img.width / 8;
+
+  for (let i = 0; i < 10; i++) {
+    textures.push(img.get(i * w, 0, w, img.height));
+  }
+}
+
+function doubleClicked() {
+  if (!point) {
+    point = new Point(mouseX, mouseY);
+  } else {
+    scene.bounds.push(new Bound(point, new Point(mouseX, mouseY), textures[4], color(0, 0, 255)));
+    point = undefined;
+  }
+}
+
+function draw() {
+  background(0);
+
+  scene.move();
+
+  // scene.debug();
+
+  scene.show();
+
+  for (let bound of scene.bounds) bound.show();
+
+  scene.head.show();
+}

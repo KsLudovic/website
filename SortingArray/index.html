@@ -1,0 +1,161 @@
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/962dd205fc.js" crossorigin="anonymous"></script>
+    <script src="../app.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <canvas width="700" height="600" id="canvas" style="background-color:#333333;"></canvas>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        padding-top: 3rem;
+        overflow: hidden;
+      }
+    </style>
+   <script>
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    
+    const map = (number, in_min, in_max, out_min, out_max) => {
+      return (number - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+    };
+    
+    var values = []
+    var x = 0
+    var test = false
+    
+    function setup()
+        {
+            x = 0
+            values = []
+            
+            if(Math.random() > 0.5)
+            	{
+            		test = false
+            	}
+            else {
+            	test = true
+            }
+            
+            canvas.height = window.innerHeight
+            canvas.width = window.innerWidth
+            
+            for(var i = 0; i < canvas.width; i++)
+                {
+                    var value = Math.floor(Math.random()*canvas.height)+1
+                    values.push(value)
+                }
+            
+//            for(var i = 0; i < values.length; i++) 
+//                {
+//                    for(var j = 0; j < values.length-i-1; j++) 
+//                        {
+//                            var a = values[j]
+//                            var b = values[j+1]
+//                            if(a > b) 
+//                                {
+//                                  swap(values, j, j+1);
+//                              }
+//                        }
+//                }
+        }
+    
+    function draw()
+        {
+        	if(x < values.length) 
+        		{
+          		for(var j = 0; j < values.length-x; j++) 
+          			{
+            			var a = values[j];
+             		 var b = values[j+1];
+             		 if(a > b) 
+              			{
+                			swap(values, j, j+1);
+                		}
+         				}
+         		}
+         	else
+         		{
+         			setup()
+         		}
+         		x++;
+            
+      		ctx.fillStyle = 'rgb(51,51,51)'
+      		ctx.fillRect(0, 0, canvas.width, canvas.height)
+      
+           for(var i = 0; i < values.length; i++) 
+           	{
+            	ctx.fillStyle = "hsl("+map(values[i], 0, canvas.height, 0, 359)+",100%,50%)"
+            	if(test)
+            		{
+            			ctx.fillRect(i, canvas.height, 1, -values[i])
+            			ctx.fillStyle = "white"
+            			ctx.fillRect(i, canvas.height-values[i], 1, 2)
+            		}
+            	else
+            		{
+            			ctx.fillStyle = "hsl("+map(values[i], 0, canvas.height, 359,0)+",100%,50%)"
+            			ctx.fillRect(i, 0, 1, values[i])
+            			ctx.fillStyle = "white"
+            			ctx.fillRect(i, values[i], 1, 2)
+            		}
+            }
+        }
+    
+    function swap(arr, a, b) 
+        {
+          var temp = arr[a];
+          arr[a] = arr[b];
+          arr[b] = temp;
+        }
+    
+    setup()
+    draw()
+    
+    var int = setInterval(function(){draw()}, 1)
+</script>
+
+    <title>Array Sorting</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="logo">
+          <a href="../index.html" class="nav-link">
+            <i class="fas fa-home"></i>
+            <span class="link-text">Home</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="../Now/index.html" class="nav-link">
+            <i class="fas fa-clock"></i>
+            <span class="link-text">Now</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="../Projects/index.html" class="nav-link">
+            <i class="fas fa-suitcase" id="projects"></i>
+            <span class="link-text">Projects</span>
+          </a>
+        </li>
+
+
+        <li class="nav-item">
+          <a href="" class="nav-link">
+            <i class="fab fa-github"></i>
+            
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
+
+
