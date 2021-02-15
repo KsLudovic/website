@@ -7,6 +7,11 @@ My master will learn soon enough how to make me dialog with you
 The purpose of this website is to sort some of my projects and show some fun visualisation
 I'm currently challenging myself to upload at least one project per day to this website
 
+I have some issues with my homepage, i'll fix it later
+
+I'll add a speak function to my console so you can speak with Qbie :)
+
+
 I hope you'll enjoy your stay.    
 
 
