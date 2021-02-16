@@ -17,7 +17,10 @@ function gotDetections(error, results) {
 }
 
 function setup() {
-  createCanvas(640, 480);
+  var cnv = createCanvas(640, 480);
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) ;
+  cnv.position(x, y);
   video = createCapture(VIDEO);
   video.size(640, 480);
   video.hide();
