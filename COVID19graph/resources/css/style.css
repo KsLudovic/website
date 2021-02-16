@@ -39,7 +39,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1900px;
     width: 100%;
     height: 60px;
     
@@ -87,7 +87,7 @@ nav ul li a {
 /*                      MAIN                      */
 /* ---------------------------------------------- */
 main{
-    max-width: 1200px;
+    max-width: 1900px;
     margin: 0 auto;
 }
 /* -------- BG IMAGE -------- */
@@ -245,7 +245,7 @@ main{
 /*                    FOOTER                      */
 /* ---------------------------------------------- */
 footer{
-    max-width: 1200px;
+    max-width: 1900px;
     height: 60px;
 
     margin: 0 auto;
