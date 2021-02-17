@@ -4,7 +4,7 @@
 
 body {
   margin-top: 3.5rem;
-  background-image: linear-gradient(315deg, #d4fae4 0%, #cfece1 74%);    font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(315deg, #464646 0%, #000000 90%);    font-family: "Poppins", sans-serif;
 }
 
 body::-webkit-scrollbar {
