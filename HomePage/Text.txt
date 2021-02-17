@@ -9,12 +9,9 @@ I'm currently challenging myself to upload at least one project per day to this 
 
 I have some issues with my homepage, i'll fix it later
 
-some of my function aren't working on the Homepage (i dont know why)
-
-to test them copy :
-run https://ksludovic.github.io/website/Terminal/index.html
-
 I'll add a speak function to my console so you can speak with Qbie :)
+
+i'm currently working on implementing some algorithm function into the console
 
 
 I hope you'll enjoy your stay.    
