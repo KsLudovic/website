@@ -5,12 +5,12 @@
 }
 
 body {
-	background-image: linear-gradient(315deg, #0606da 0%, #685ee9 74%);
+	background-image: linear-gradient(315deg, #0606da 0%, #382ddf 74%);
 	font-family: "Poppins", sans-serif; 
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	height: 1100vh;
 	margin: 0;
 	transition: background 0.2s linear;
 }
