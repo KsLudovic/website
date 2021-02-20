@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://webgazer.cs.brown.edu/webgazer.js?" defer></script>
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script src="https://kit.fontawesome.com/962dd205fc.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+  <title>EyeSwipe</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+  
+
+
+    img {
+      width: 50vw;
+      height: 100vh;
+      transition: transform 200ms;
+      object-fit: cover;
+    }
+
+    img.left {
+      transform: translateX(-100vw);
+    }
+
+    img.right {
+      transform: translateX(100vw);
+    }
+
+    img.next {
+      display: none;
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+        <a href="../index.html" class="nav-link">
+          <i class="fas fa-home"></i>
+          <span class="link-text">Home</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="../Now/index.html" class="nav-link">
+          <i class="fas fa-clock"></i>
+          <span class="link-text">Now</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="../Projects/index.html" class="nav-link">
+          <i class="fas fa-suitcase" id="projects"></i>
+          <span class="link-text">Projects</span>
+        </a>
+      </li>
+
+
+      <li class="nav-item">
+        <a href="../Info/index.html" class="nav-link">
+          <i class="fas fa-info"></i>
+          <span class="link-text">Info</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="../Contact-Form/index.html" class="nav-link">
+          <i class="fas fa-envelope"></i>
+          <span class="link-text">Contact</span>
+        </a>
+      </li>
+
+
+      <li class="nav-item">
+        <a href="https://github.com/KsLudovic" class="nav-link">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  
+</body>
+</html>
