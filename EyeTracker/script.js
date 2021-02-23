@@ -1,5 +1,6 @@
 window.saveDataAcrossSessions = true
 
+
 const LOOK_DELAY = 250 // .5 second
 const LEFT_CUTOFF = window.innerWidth / 4
 const RIGHT_CUTOFF = window.innerWidth - window.innerWidth / 4
