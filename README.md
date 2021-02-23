@@ -5,9 +5,6 @@ I know there is an issue, i need to add github shortcut to each of my "project c
 
 Text contains some typing error, sorry, will fix it soon
 
-Will add later a French Version of it 
+This website work as a template of some of my projects
 
-
-// need to fix terminal display on changing screen's size
-
-// covid graph is working only locally, i need to find another api..
+Most of these projects were done recently, i'm imposing to myself a  "one project a day challenge" 
