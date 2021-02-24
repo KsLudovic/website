@@ -24,7 +24,7 @@ var foo = new p5.Speech();
 
 // STEP 1: Load the model!
 function preload() {
- classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/YWdZ5E3z5/model.json');
+ classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/ootsSRWCX/model.json');
   //make sure that it ends with /model.json
   
 }
