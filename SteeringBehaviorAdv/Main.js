@@ -51,7 +51,8 @@ function setup() {
   
   input.push(new Data("Have fun!!", 72, 100));
   input.push(new Data("Have fun!!", 72, 100));
-
+  
+  input.push(new Data("Sacha Plancha brushaaaa", 72, 100));
   central = new SteeringBehavior(input);
 
   print(input);
