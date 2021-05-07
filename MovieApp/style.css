@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #373b69;
+    background-color: #0f133b;
     margin-top: 50px;
     display: flex;
     justify-content: flex-end;
@@ -34,6 +34,45 @@ header {
 }
 
 .search:focus {
+    background-color: #43456b;
+    outline: none;
+}
+
+.username {
+    background-color: transparent;
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 0.6rem;
+    padding: 0rem 0.2rem;
+    position : absolute;
+    left:0px;
+}
+.username::placeholder {
+    color: #f7f0f0;
+}
+.username:focus {
+    background-color: #43456b;
+    outline: none;
+}
+
+.password {
+    background-color: transparent;
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 0.6rem;
+    padding: 0rem 0.2rem;
+    position: absolute;
+    left:0px;
+    margin-top: 25px;
+}
+.password::placeholder {
+    color: #f7f0f0;
+}
+.password:focus {
     background-color: #43456b;
     outline: none;
 }
