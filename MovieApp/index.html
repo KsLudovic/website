@@ -2,6 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Movie App</title>
         <link rel="stylesheet" href="style.css" />
@@ -65,20 +68,47 @@
                     placeholder="Search"
                     class="search"
                 />
-                <input
-                    type = "text"
-                    id = "username"
-                    placeholder="Username"
-                    class="username"
-                />
-                <input
-                  type = "password"
-                  id = "password"
-                  placeholder="Password"
-                  class="password"
-                />
+              
+                <div class="center">
+                  <input type="checkbox" id="show">
+                  <label for="show" class="show-btn">login</label>
+                  <div class="container">
+                    <label for="show" class="close-btn fas fa-times" title="close"></label>
+                    <div class="text">
+            Login Form</div>
+            <form action="#">
+                      <div class="data">
+                        <label>Email or Phone</label>
+                        <input type="text" required>
+                      </div>
+            <div class="data">
+                        <label>Password</label>
+                        <input type="password" required>
+                      </div>
+            <div class="forgot-pass">
+            <a href="./resetPasswordForm.html" class = "nav-link">Forgot Password?</a>
+           
+            </div>
+            <div class="btn">
+                        <div class="inner">
+                          
+                          
+            </div>
+            <button type="submit">login</button>
+                      </div>
+            <div class="signup-link">
+            Not a member? <a href="./signup.html">Signup now</a></div>
             </form>
+            </div>
+            </div>           
+                    </form>
+                  </div>
+                </div>
+            </form>
+            
         </header>
+
+        
         <div id="tags"></div>
         <main id="main"></main>
         <div class="pagination">
@@ -87,5 +117,8 @@
           <div class="page" id="next">Next Page</div>
   
       </div>
+      
     </body>
+    
+    
 </html>
