@@ -6,14 +6,14 @@
 
 body {
     background-color: #3b209c;
-    background-image: linear-gradient(315deg, #215faf 0%, #3f35d3 84%); 
+    background-image: linear-gradient(315deg, #000000 0%, #000000 84%); 
     font-family: "Poppins", sans-serif;
     margin: 0;
 }
 
 header {
-    background-color: #0f133b;
-    margin-top: 50px;
+  background-image: linear-gradient(rgba(243, 247, 29, 0.9), rgba(255, 166, 0, 0.9));
+    margin-top: 85px;
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
@@ -21,7 +21,7 @@ header {
 
 
 .search {
-    background-color: transparent;
+    background: black; 
     border: 4px solid #22254b;
     border-radius: 50px;
     color: #fff;
@@ -36,18 +36,18 @@ header {
 
 
 .search:focus {
-    background-color: #43456b;
+    background-color: #47395a;
     outline: none;
 }
 
   .show-btn{
       
-  background-color : transparent;
+    background:black;
   border: 4px solid #22254b;
   border-radius: 30px;
   padding: 10px 20px;
   position : absolute;
-  top: 80px;
+  top: 110px;
   left : 30px;
   font-size: 15px;
   font-family: inherit;
@@ -78,13 +78,16 @@ input[type="checkbox"]{
 }
 .container{
   display: none;
-  background: #fff;
-  border-color: grey;
-  border-width: 1px;
+  background-image: linear-gradient(315deg, #000000 0%, #6159cc 84%); 
+  border-color: rgb(0, 0, 0);
+  color:white;
+  border-width: 10px;
   width: 430px;
   padding: 30px;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
+
+
 #show:checked ~ .container{
   display: block;
 }
@@ -99,6 +102,7 @@ input[type="checkbox"]{
   color: #3498db;
 }
 .container .text{
+  
   font-size: 35px;
   font-weight: 600;
   text-align: center;
@@ -114,12 +118,14 @@ input[type="checkbox"]{
 form .data label{
   font-size: 18px;
 }
+
 form .data input{
   height: 100%;
   width: 100%;
   padding-left: 10px;
   font-size: 17px;
-  border: 1px solid silver;
+  color:black;
+  border: 1px solid rgb(99, 96, 96);
 }
 form .data input:focus{
   border-color: #3498db;
@@ -138,6 +144,7 @@ form .forgot-pass a:hover{
 form .btn{
   margin: 30px 0;
   height: 45px;
+  border-radius: 70px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -190,7 +197,7 @@ main {
     overflow: hidden;
     position: relative;
     margin: 1rem;
-    width: 300px;
+    width: 400px;
 }
 
 .movie img {
@@ -260,9 +267,9 @@ main {
 
 .tag{
     color:white;
-    padding:10px 20px;
-    background-image: linear-gradient(rgba(43, 44, 44, 0.9), rgba(22, 36, 238, 0.9));
-    border-radius: 50px;
+    padding:20px 40px;
+    background-image: linear-gradient(rgba(243, 247, 29, 0.9), rgba(255, 166, 0, 0.9));
+    border-radius: 1000px;
     margin:5px;
     display:inline-block;
     cursor: pointer;
@@ -274,7 +281,7 @@ main {
 
 
 .tag.highlight{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 0, 0, 0.9));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(223, 211, 211, 0.9));
 }
 .no-results{
     color:white;
@@ -309,5 +316,7 @@ main {
 .form-gap {
     padding-top: 70px;
 }
+
+
 
 
