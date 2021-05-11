@@ -31,12 +31,12 @@ header {
 }
 
 .search::placeholder {
-    color: #f7f0f0;
+    color: #ffffff;
 }
 
 
 .search:focus {
-    background-color: #47395a;
+    background-color: #000000;
     outline: none;
 }
 
@@ -78,7 +78,7 @@ input[type="checkbox"]{
 }
 .container{
   display: none;
-  background-image: linear-gradient(315deg, #000000 0%, #6159cc 84%); 
+  background-image: linear-gradient(315deg, #ffa600 0%, #daa618 84%); 
   border-color: rgb(0, 0, 0);
   color:white;
   border-width: 10px;
@@ -155,7 +155,7 @@ form .btn .inner{
   position: absolute;
   left: -100%;
   z-index: -1;
-  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  background: -webkit-linear-gradient(right, #d2dcdd, #ffee00, #f30000, #fbff00);
   transition: all 0.4s;
 }
 form .btn:hover .inner{
