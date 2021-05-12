@@ -275,7 +275,7 @@ main {
     cursor: pointer;
 }
 .tag:hover{
-    color:yellow;
+    color:rgb(110, 73, 3);
 }
 
 
@@ -308,14 +308,115 @@ main {
 .current{
     padding: 10px 20px;
     border-radius: 50%;
-    border: 5px solid yellow;
+    border: 5px solid rgb(255, 136, 0);
     font-size: 20px;
     font-weight: 600;
 }
 
+
+
+
 .form-gap {
     padding-top: 70px;
 }
+
+
+footer{
+  opacity:1;
+  transform: scale(1);
+}
+
+.foot-nav {
+  list-style-type : none;
+  float : right;
+  padding-right: 50px;
+  
+}
+
+.foot-nav li a:is(:hover,:active){
+  
+  color: yellow;
+  
+}
+
+.social-links li a:is(:hover,:active){
+  transition: color 0.2s;
+
+}
+
+.fa-facebook-f {
+  transition: color 0.2s;
+}
+
+.fa-twitter {
+  transition: color 0.2s;
+}
+
+.fa-google {
+
+  transition: color 0.2s;
+}
+
+.fa-github {
+  transition : color 0.2s;
+
+}
+
+.fa-facebook-f:is(:hover, :active) {
+  color: #3b5999;
+}
+
+.fa-twitter:is(:hover, :active) {
+  color: #55acee;
+}
+
+.fa-google:is(:hover, :active) {
+  color: red;
+}
+.fa-github:is(:hover, :active) {
+  color: grey;
+}
+
+
+
+
+
+
+.social-links {
+  list-style: none;
+  float:left;
+ 
+}
+
+.foot-nav li,
+.social-links li{
+  display: inline-block;
+  margin-right: 16px;
+
+}
+
+.foot-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0px;
+}
+
+.foot-nav li a,
+.social-links li a {
+  color:orange;
+}
+
+.social-links li a {
+  font-size: 20px;
+}
+
+
+footer p {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
 
 
 
