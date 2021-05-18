@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class ="circle"></div>
+  <div class="circle-2"></div>
+<section class="contact-form">
+  <h1>Envoyez un message</h1>
+  <p>Utilisez ce formulaire pour m'envoyer un message.</p>
+  
+  <form>
+    
+    <div class="input-group">
+      <input id="salutation-mr" name="salutation" type="radio" value="Mr."/>
+      <label class="inline" for="salutation-mr">Mr.</label>
+      
+      <input id="salutation-mrs" name="salutation" type="radio" value="Mrs."/>
+      <label class="inline" for="salutation-mrs">Mme.</label>
+    </div>
+    
+    <div class="input-group">
+      <label for="name">Nom</label>
+      <input id="name" name="name" type="text" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" required />
+    </div>
+    
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required/>
+    </div>
+    <div class="input-group">
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" type="age" required min="1" max="120"/>
+    </div>
+    <div class="input-group">
+      <label for="metier">Metier</label>
+      <input type="text" id="metier" name="metier" type="metier" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" required/>
+    </div>
+
+    <div class="input-group">
+    <label for="avis">Recommanderiez-vous le produit</label>
+<select name="avis" id="avis" required>
+  <option value="oui">Oui</option>
+  <option value="pe">Peut-être</option>
+  <option value="non">Non</option>
+</select>
+</div>
+
+
+<div class="input-group">
+  <label for="comp">Quelle(s) compétence(s) aimeriez-vous améliorer ?</label>
+<select name="comp" id="comp" multiple required>
+<option value="git">Git</option>
+<option value="nodeJS">nodeJS</option>
+<option value="Angular">Angular</option>
+<option value="html">HTML</option>
+<option value="css">CSS</option>
+<option value="kubernetes">Kubernetes</option>
+<option value="jenkins">Jenkins</option>
+</select>
+</div>
+    
+    <div class="input-group">
+      <label for="message">Entrez un commentaire</label>
+      <textarea id="message" name="message" rows="6" cols="30" placeholder="Votre commentaire ne peut excéder 200 caractères.." required></textarea>
+    </div>
+    <button type="submit"> <div id="slide"></div>Send It!</button>
+    <label><div class="input-group"></div>cliquez pour envoyer le formulaire et télécharger le fichier json</label>
+  </form>
+</section>
+
+<div class="results">
+  <h2>Data JSON Format visualizer</h2>
+  <pre></pre>
+</div>
+</body>
+</html>
+

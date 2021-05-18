@@ -1,0 +1,14 @@
+{
+    "salutation": "Mr.",
+    "name": "ludovic",
+    "email": "ludovic.casseyo@gmail.com",
+    "age": "26",
+    "metier": "gfdgfdgds",
+    "avis": "oui",
+    "comp": [
+      "git",
+      "nodeJS",
+      "Angular"
+    ],
+    "message": "J'aime ce formulaire."
+  }
