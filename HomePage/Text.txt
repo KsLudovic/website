@@ -1,19 +1,40 @@
 Welcome to my website !      
-I'm your friendly console Qbie,
-I'm working on amelioring myself 
-I'll be able to do a lot of things in the future to help you interacts with the projects here
-My master will learn soon enough how to make me dialog with you 
+My name is Ludovic Casse, and here is a template of a lot of
+projects of mine,
+most of those are graphical representation done in p5js,
+It's a lot of algorithm visualization,
+My tech are Java, javascript, Typescript, c#, python
+I'm an algorithm/AI enthusiast, I like problems and solving them
+Soon enough, i'll be doing some fullstack project and make
+accessible links
+via the "Now" icon
+If you are a Codingamer (like myself), don't hesitate on following me,
+https://www.codingame.com/profile/0d50b00efa449e96b27dcb60855685f05969993,
+I'm currently rank 1k2~ worldwide, and recently hit a Legend Ranking !
+I'm currently searching for a team for the Fall challenge that will occur
+this year.
 
-The purpose of this website is to sort some of my projects and show some fun visualisation
-I'm currently challenging myself to upload at least one project per day to this website
+As an algorithm enthusiast, one of my dream, is to make 
+"hard algorithm principle"
+easy to learn, via some simple and fun visualization !
 
-I have some issues with my homepage, i'll fix it later
+I know my HomePage is quiet broken right now, i'll fix it
 
-I'll add a speak function to my console so you can speak with Qbie :)
+I'll soon use Angular Framework form this website, but i'm already
+working on a lot of projects at the same time, so it'll take time,
 
-i'm currently working on implementing some algorithm function into the console
+I'm currently Searching for an InternShip, do not hesitate to contact me
+via my mail.
 
+If you are interested in some of my works, or want to work with me on improving
+some ideas, i'll really enjoy it.
 
-I hope you'll enjoy your stay.    
+I know a lot of my projects feels a bit short on explanation, 
+these as first was only done for myself, and keeping track of them.
+
+I hope you'll enjoy your stay, and maybe learn some fun things.
+
+Thanks,
+C.Ludovic 
 
 
