@@ -1,0 +1,11 @@
+This project was done in javascript, it is only a representation of the idea
+Its a Sign recognition, the set data is for number 0 to 9.
+
+Speech recognition functionnality is enable
+
+
+The project was done using ml5 : https://ml5js.org/
+
+Teachable machine was use to generate a big enought data set to have around 80%~ accuracy on a working test :
+https://teachablemachine.withgoogle.com/
+
